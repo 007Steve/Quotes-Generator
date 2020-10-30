@@ -1,0 +1,62 @@
+.quotes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(12, 11, 11);
+    color: white;
+    height: 100vh;
+}
+.quotes-new-container{
+    width: 50%;
+}
+.quote{
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    padding: 50px;
+    border-radius: 50px;
+    position: relative;
+    width: fit-content;
+    top:0;
+    animation: bot_float ease-in 8s infinite;
+}
+/* Animaton*/
+@keyframes bot_float{
+    50% { top: 100px;}
+    100% { top: 0px;}
+}
+
+ .quotes-shadow{
+    position: relative;
+    height: 16px;
+    background-color: rgb(56, 55, 55);
+    opacity: 0.1;
+    border-radius: 100%;
+    margin: 0px 0px 0px 0px;
+    top: 100px;
+    left: 0px;
+    animation: shadow_react ease-in 8s infinite;
+ }
+/* Animaton*/
+ @keyframes shadow_react{
+    50% { margin: 0px 20% 0px 20%;  opacity: 0.7;}
+    100% { margin: 0px 0px 0px 0px;  opacity: 0.1;}
+}
+
+.btn-grad {background-image: linear-gradient(to right, #ff0084 0%, #33001b  51%, #ff0084  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
